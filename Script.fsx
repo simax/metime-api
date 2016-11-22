@@ -2,8 +2,8 @@
 
 open FSharp.Data.Sql
 
-let [<Literal>] ResolutionPath =  @"/Users/simonlomax/Documents/Development/sqlite" 
-let [<Literal>] ConnectionString = "Data Source=/Users/simonlomax/Documents/Development/fsharp-projects/metime-api/data/metime.sqlite;Version=3"
+let [<Literal>] ResolutionPath =  @"sqlite" 
+let [<Literal>] ConnectionString = "Data Source=data/metime.sqlite;Version=3"
  
 // create a type alias with the connection string and database vendor settings
 type Sql = SqlDataProvider< 
